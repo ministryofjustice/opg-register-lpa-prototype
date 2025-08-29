@@ -7,6 +7,13 @@ Register a lasting power of attorney: Make your LPA
 {% block header %}
   <!-- Blank header with no service name for this page -->
   {{ govukHeader() }}
+
+    {{ govukServiceNavigation({
+    serviceName: serviceName,
+    serviceUrl: "#"
+  }) }}
+  
+
 {% endblock %}
 
 {% block beforeContent %}

@@ -7,6 +7,12 @@ Register a lasting power of attorney: Agree to be an attorney
 {% block header %}
   <!-- Blank header with no service name for this page -->
   {{ govukHeader() }}
+
+    {{ govukServiceNavigation({
+    serviceName: serviceName,
+    serviceUrl: "#"
+  }) }}
+
 {% endblock %}
 
 {% block beforeContent %}
@@ -96,6 +102,7 @@ Register a lasting power of attorney: Agree to be an attorney
 
       <p>You must:</p>
    <ul class="govuk-list govuk-list--bullet">
+	   <li>be aged 18 or older</li>
     <li>act as instructed by donor in the LPA</li>
      <li>support the donor to make their own decisions wherever possible</li>
      <li>act in the donor’s best interests</li>

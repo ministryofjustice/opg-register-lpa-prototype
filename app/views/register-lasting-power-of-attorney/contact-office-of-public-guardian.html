@@ -7,6 +7,12 @@ Register a lasting power of attorney: Contact the Office of the Public Guardian
 {% block header %}
   <!-- Blank header with no service name for this page -->
   {{ govukHeader() }}
+
+  {{ govukServiceNavigation({
+    serviceName: serviceName,
+    serviceUrl: "#"
+  }) }}
+
 {% endblock %}
 
 {% block beforeContent %}
