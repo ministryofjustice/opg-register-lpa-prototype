@@ -1,3 +1,8 @@
 {
-  "serviceName": "Register lasting power of attorney"
+  "serviceName": "Register lasting power of attorney",
+  "plugins": {
+    "govuk-frontend": {
+    "rebrand": true
+    }
+  }
 }
