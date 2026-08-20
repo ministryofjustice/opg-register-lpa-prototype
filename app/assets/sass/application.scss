@@ -4,3 +4,7 @@
 // 
 
 // Add extra styles here
+
+// These can be removed once @govuk-prototype-kit/common-templates is updated to use the latest govuk-frontend
+@use "_contents-list.scss" as *;
+@use "_mainstream-guide.scss" as *;

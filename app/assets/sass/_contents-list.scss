@@ -1,0 +1,59 @@
+@use "govuk-frontend/dist/govuk/index.scss" as *;
+
+.govuk-prototype-kit-common-templates-contents-list {
+  // Always render the contents list above a
+  // back to contents link
+  position: relative;
+  margin: 0 0 govuk-spacing(4) 0;
+  z-index: 1;
+  background: govuk-colour("white");
+  box-shadow: 0 20px 15px -10px govuk-colour("white");
+}
+
+.govuk-prototype-kit-common-templates-contents-list__title {
+  color: govuk-functional-colour("text");
+  @include govuk-font($size: 16, $weight: regular, $line-height: 1.5);
+  margin: 0;
+}
+
+.govuk-prototype-kit-common-templates-contents-list__list,
+.govuk-prototype-kit-common-templates-contents-list__nested-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.govuk-prototype-kit-common-templates-contents-list__list-item {
+  padding-top: govuk-spacing(2);
+  line-height: 1.3;
+  list-style-type: none;
+}
+
+.govuk-prototype-kit-common-templates-contents-list__list,
+.govuk-prototype-kit-common-templates-contents-list__nested-list {
+  color: govuk-functional-colour("text");
+  @include govuk-font($size: 16);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.govuk-prototype-kit-common-templates-contents-list__list-item--dashed {
+  $contents-spacing: govuk-spacing(5);
+  position: relative;
+  padding-left: $contents-spacing;
+  padding-right: $contents-spacing;
+
+  &:before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    width: govuk-spacing(4);
+    overflow: hidden;
+
+    .direction-rtl & {
+      left: auto;
+      right: 0;
+    }
+  }
+}
