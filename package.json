@@ -10,6 +10,6 @@
     "govuk-prototype-kit": "13.20.4"
   },
   "overrides": {
-    "sass": "1.103.1"
+    "sass": "1.104.0"
   }
 }
