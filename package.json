@@ -5,11 +5,11 @@
     "start": "node node_modules/govuk-prototype-kit/bin/cli start"
   },
   "dependencies": {
-    "@govuk-prototype-kit/common-templates": "3.0.0",
-    "govuk-frontend": "6.5.0",
-    "govuk-prototype-kit": "13.20.4"
+    "@govuk-prototype-kit/common-templates": "3.0.1",
+    "govuk-frontend": "6.5.1",
+    "govuk-prototype-kit": "13.20.5"
   },
   "overrides": {
-    "sass": "1.104.0"
+    "sass": "1.104.1"
   }
 }
