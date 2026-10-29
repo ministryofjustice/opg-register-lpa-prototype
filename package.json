@@ -6,10 +6,10 @@
   },
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "3.0.1",
-    "govuk-frontend": "6.5.1",
+    "govuk-frontend": "6.6.0",
     "govuk-prototype-kit": "13.20.5"
   },
   "overrides": {
-    "sass": "1.105.1"
+    "sass": "1.106.1"
   }
 }
